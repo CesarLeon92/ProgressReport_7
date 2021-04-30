@@ -1,0 +1,78 @@
+<html>
+    <head>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<!--script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script-->
+<!--script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script-->
+    </head>
+    <body>
+    <link rel = "stylesheet" href = "Style.css">
+    <style>
+        h1{
+            color:rgb(143, 45, 45);
+            font-size: 70px;
+            background-color: blueviolet ;
+            text-align: center;
+        }
+       
+    </style>
+
+        <h1>GameForm Sign In</h1>
+        <h2 class ="title">Login to your account</h2>
+        <p class = "name">Welcome to my website please be sure to sing up!</p>
+     
+        <img class = "gaming_pic" style="align-items: center"; src="gamer.png" alt="examplegame.com" width="300" height="284">
+        
+
+      
+          
+
+
+
+            <div id ="login_div" class = "main-div">
+                <h3>Firebase web login example</h3>
+        <input type="email" placeholder="email"  id="email_field"/>
+        <input type="password" placeholder="password"  id = "password_field"/>
+            
+        <button onclick="login()">Login to Account</button>
+<!--button onclick="signIn()" id="signIn"> Sign In</button-->
+</div>
+
+<div id = "user_div" class = "loggedin-div">
+   <h4> Welcome User</h4>
+   <p> Welcome to firebase web login example you are currently logged in </p>
+   <button>Logout</button>
+        <!--button onclick="signUp()" id="signUp"> Sign Up</button-->
+    
+    <button onclick="logout()" id="signOut"> Sign Out</button>
+
+</div>
+    
+    
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDnTZv9Rj-jykO6cNVMV4G0KIoeXDV3Yrw",
+    authDomain: "loginform-a3bfc.firebaseapp.com",
+    projectId: "loginform-a3bfc",
+    storageBucket: "loginform-a3bfc.appspot.com",
+    messagingSenderId: "105058579537",
+    appId: "1:105058579537:web:690d629ef779ad6e513470",
+    measurementId: "G-GDWXC37XLL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script src="index.js"></script>
+    </body>
+</html>
